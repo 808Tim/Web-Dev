@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 150px;
+}
+
+.logo {
+    width: 70px;
+    position: relative;
+    right: 310px;
+    top: 10px;
+}
+
+.image {
+    width: 400px;
+}
+
+.left p {
+    font-size: 36px;
+    width: 400px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.gradient {
+    font-size: 36px;
+    background: -webkit-linear-gradient(left, #ff8214, #fb0bff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* .main {
+    margin-bottom: 100px;
+} */
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 100vh;
+    border-left: 2px solid rgb(0, 0, 0, 0.1);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.right p {
+    position: relative;
+    right: 25px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    margin-left: 170px;
+}
+
+.box form {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+}
+
+.box form input {
+    margin-bottom: 10px;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    width: 350px;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 10px;
+    outline: none;
+}
+
+.box button {
+    background-color: royalblue;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.box button:hover {
+    cursor: pointer;
+}
+
+.forgotten {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.facebook, .new {
+    text-decoration: none;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    width: 350;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.new {
+    border-color: royalblue;
+    color: royalblue;
+}
+
+.box img {
+    width: 50px;
+}
+
+.main {
+    margin-bottom: 40px;
+}

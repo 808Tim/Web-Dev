@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Mona Sans", sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+header img {
+    width: 20px;
+    margin-left: 30px;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: left;
+    margin-left: -30px;
+}
+
+header nav ul li {
+    list-style: none;
+    margin-right: 10px;
+    font-size: 12px;
+    color: gray;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.upper-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.upper-section h1 {
+    letter-spacing: -2px;
+    font-weight: 800;
+}
+
+.upper-section p {
+    text-align: center;
+    font-size: 12px;
+    width: 770px;
+    margin-top: 0;
+    color: gray;
+}
+
+.upper-section button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 0 15px;
+    height: 35px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 70px;
+}
+
+.box {
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 240px;
+    height: 500px;
+    margin: 0px 10px;
+    box-shadow: 0px 0px 35px rgb(0, 0, 0, 0.2);
+}
+
+.h_ {
+    font-weight: bold;
+}
+
+.p_ {
+    margin-top: -15px;
+    font-size: 10px;
+    text-align: center;
+    color: gray;
+    padding: 0px 40px;
+}
+
+.pricing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dollar {
+    color: gray;
+    margin-bottom: 20px;
+    font-size: 12px;
+    margin-right: 2px;
+}
+
+.price {
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-right: 2px;
+}
+
+.usd {
+    font-weight: 500;
+    margin-right: 3px;
+}
+
+.per-user {
+    font-size: 10px;
+    font-weight: 500;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+#first button {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    width: 220px;
+    height: 30px;
+    font-size: 12px;
+}
+
+#second button {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: black;
+    color: whitesmoke;
+    font-weight: bold;
+    width: 220px;
+    height: 30px;
+    font-size: 12px;
+}
+
+.enterprice-box {
+    color: gray;
+    background-color: white;
+    border: 1px solid #ddd;
+    font-size: 10px;
+    padding: 0px 5px;
+    border-radius: 10px;
+    margin-top: -7px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons button {
+    margin: 0px 5px;
+    padding: 0px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    height: 30px;
+    border: 1px solid #ddd;
+    background-color: white;
+    border-radius: 5px;
+}
+
+
+
