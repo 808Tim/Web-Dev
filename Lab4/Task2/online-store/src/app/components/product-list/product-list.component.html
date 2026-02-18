@@ -1,0 +1,29 @@
+<div class="page">
+  <h1>Online Store</h1>
+
+  <div class="grid">
+    <div class="card" *ngFor="let p of products">
+      <img class="image" [src]="p.image" [alt]="p.name" />
+
+      <div class="content">
+        <h3 class="title">{{ p.name }}</h3>
+        <p class="desc">{{ p.description }}</p>
+
+        <div class="meta">
+          <div class="price">{{ p.price | number }} ₸</div>
+
+          <div class="rating">
+            <span class="star" *ngFor="let _ of stars(p.rating)">★</span>
+            <!-- <span class="badge">{{ p.rating }}</span> -->
+          </div>
+        </div>
+
+        <div class="actions">
+          <button class="btn" (click)="kaspi(p.link)">Открыть в Kaspi</button>
+
+          <button class="btn outline" (click)="shareWhatsApp(p)">WhatsApp</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
