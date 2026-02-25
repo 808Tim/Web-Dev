@@ -1,0 +1,27 @@
+<article class="card">
+  <img class="image" [src]="product().image" [alt]="product().name" />
+
+  <div class="content">
+    <h3 class="title">{{ product().name }}</h3>
+    <p class="description">{{ product().description }}</p>
+
+    <div class="meta">
+      <span class="price">{{ product().price | number }} ₸</span>
+      <span class="rating">
+        @for (_ of stars(); track $index) {
+          <span class="star">★</span>
+        }
+      </span>
+    </div>
+
+    <p class="likes" (click)="like()">❤ {{ product().likes }}</p>
+
+    <div class="actions">
+      <button class="btn kaspi" (click)="openKaspi()">Открыть в Kaspi</button>
+      <!-- <button class="btn like" (click)="like()">Like</button> -->
+      <button class="btn share" (click)="shareWhatsApp()">WhatsApp</button>
+      <!-- <button class="btn share" (click)="shareTelegram()">Telegram</button> -->
+      <button class="btn delete" (click)="remove()">Delete</button>
+    </div>
+  </div>
+</article>

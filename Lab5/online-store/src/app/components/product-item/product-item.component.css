@@ -1,0 +1,108 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  /* height: 100%; */
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 12px;
+  height: 100%;
+}
+
+.title {
+  margin: 0;
+  font-size: 15px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.description {
+  margin: 0;
+  color: #6b7280;
+  font-size: 13px;
+  line-height: 1.35;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  /* min-height: 20px; */
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.price {
+  font-weight: 700;
+}
+
+.star {
+  color: red;
+}
+
+.likes {
+  margin: 0;
+  font-weight: 600;
+  color: red;
+  width: fit-content;
+}
+
+.likes:hover {
+  cursor: pointer;
+}
+
+.actions {
+  margin-top: auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.btn {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.kaspi {
+  background: red;
+  color: #fff;
+}
+
+.share {
+  background: #22c55e;
+  color: #fff;
+}
+
+.delete {
+  background: #1f2937;
+  color: #fff;
+  width: 235px;
+}
+
+.delete:hover {
+  background-color: #ef4444;
+  transition: 0.1s;
+}

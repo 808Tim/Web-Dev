@@ -1,0 +1,26 @@
+<main class="container">
+  <h1>Online Store</h1>
+  <p class="subtitle">Выберите категорию товара.</p>
+
+  <div class="categories">
+    @for (category of categories; track category.id) {
+      <button
+        class="category-btn"
+        [class.active]="selectedCategoryId() === category.id"
+        (click)="selectCategory(category.id)"
+      >
+        {{ category.name }}
+      </button>
+    }
+  </div>
+
+  @if (selectedCategoryId() === null) {
+    <p class="empty-state">Выберите категорию для того, чтобы начать.</p>
+  } @else {
+    <app-product-list
+      [categoryName]="selectedCategoryName()"
+      [products]="selectedProducts()"
+      (deleteProduct)="removeProduct($event)"
+    />
+  }
+</main>

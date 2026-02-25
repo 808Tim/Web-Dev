@@ -1,0 +1,16 @@
+<section>
+  <h2>{{ categoryName() }}</h2>
+
+  @if (visibleProducts().length === 0) {
+    <p class="empty">В этой категории больше нет товаров.</p>
+  } @else {
+    <div class="grid">
+      @for (product of visibleProducts(); track product.id) {
+        <app-product-item
+          [product]="product"
+          (deleteProduct)="onDeleteProduct($event)"
+        />
+      }
+    </div>
+  }
+</section>
