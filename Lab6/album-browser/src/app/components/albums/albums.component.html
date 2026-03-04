@@ -1,0 +1,19 @@
+<div class="albums-container">
+    <h2>All Albums</h2>
+
+    @if (isLoading) {
+    <div class="loader">Loading albums...</div>
+    } @else {
+    <div class="album-grid">
+        @for (album of albums; track album.id) {
+        <div class="album-card" [routerLink]="['/albums', album.id]">
+            <div class="album-content">
+                <span class="album-id">#{{ album.id }}</span>
+                <h3 class="album-title">{{ album.title }}</h3>
+            </div>
+            <button class="btn danger" (click)="deleteAlbum(album.id, $event)">Delete</button>
+        </div>
+        }
+    </div>
+    }
+</div>

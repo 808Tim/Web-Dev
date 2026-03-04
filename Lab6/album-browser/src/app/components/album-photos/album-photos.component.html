@@ -1,0 +1,19 @@
+<div class="photos-container">
+    <div class="header">
+        <button class="btn secondary" (click)="goBack()">&larr; Back to Album</button>
+        <h2>Photos for Album #{{ albumId }}</h2>
+    </div>
+
+    @if (isLoading) {
+    <div class="loader">Loading photos...</div>
+    } @else {
+    <div class="photo-grid">
+        @for (photo of photos; track photo.id) {
+        <div class="photo-card">
+            <img [src]="photo.thumbnailUrl" [alt]="photo.title" loading="lazy" />
+            <p class="photo-title">{{ photo.title }}</p>
+        </div>
+        }
+    </div>
+    }
+</div>

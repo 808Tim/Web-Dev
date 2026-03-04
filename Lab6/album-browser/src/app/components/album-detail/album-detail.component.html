@@ -1,0 +1,35 @@
+<div class="detail-container">
+    @if (isLoading) {
+    <div class="loader">Loading album details...</div>
+    } @else if (album) {
+    <div class="detail-header">
+        <button class="btn secondary" (click)="goBack()">&larr; Back</button>
+        <h2>Album Details</h2>
+    </div>
+
+    <div class="card detail-card">
+        <div class="info-row">
+            <span class="label">ID:</span>
+            <span class="value">{{ album.id }}</span>
+        </div>
+        <div class="info-row">
+            <span class="label">User ID:</span>
+            <span class="value">{{ album.userId }}</span>
+        </div>
+
+        <div class="form-group">
+            <label for="title">Title:</label>
+            <input type="text" id="title" [(ngModel)]="album.title" class="form-control" />
+        </div>
+
+        <div class="actions">
+            <button class="btn primary" (click)="saveAlbum()" [disabled]="isSaving">
+                {{ isSaving ? 'Saving...' : 'Save' }}
+            </button>
+            <button class="btn accent" [routerLink]="['/albums', album.id, 'photos']">View Photos</button>
+        </div>
+    </div>
+    } @else {
+    <div class="error-state">Album not found.</div>
+    }
+</div>
